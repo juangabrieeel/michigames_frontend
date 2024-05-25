@@ -1,0 +1,11 @@
+ /* Fondo en verde oscuro */
+ body {
+     background-color: darkgreen;
+ }
+
+ /* Tipo de letra personalizado */
+ @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+ body {
+     font-family: 'Jersey 15', sans-serif;
+ }
