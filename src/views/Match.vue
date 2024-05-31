@@ -12,6 +12,11 @@
                 </tr>
             </thead>
             <tbody>
+                <tr v-if="partidas.length === 0">
+                    <td colspan="5">
+                        <h3>Aún no hay partidas registradas</h3>
+                    </td>
+                </tr>
                 <tr v-for="(partida, index) in partidas" :key="partida.PartidaID">
                     <td>{{ index + 1 }}</td>
                     <td>{{ partida.nombre_usuario }}</td>
@@ -68,12 +73,13 @@ thead th {
     background-color: #2c352a;
     border: 1px solid #ffffff;
     padding: 10px;
+    color: #ffffff;
 }
 
 tbody td {
     border: 1px solid #000000;
     background-color: #a2b1a2;
     padding: 8px;
-    color: black
+    color: black;
 }
 </style>
